@@ -5,7 +5,7 @@ import uuid
 API_URL = "http://localhost:8000" # Maps to FastAPI
 
 st.set_page_config(page_title="Adaptive Prep System", layout="wide")
-st.title("Adaptive Document Prep System")
+st.title("Adaptive Prep System")
 
 # 1. Initialize session states
 if "quiz_data" not in st.session_state:

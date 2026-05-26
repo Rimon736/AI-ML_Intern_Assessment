@@ -41,12 +41,12 @@ A professional logging setup (`system.log`) tracking API calls, fallbacks, and D
 
 | Component | Technology | Reasoning |
 |---|---|---|
-| **Language** | Python 3.10+ | Modern ecosystem and excellent AI tooling | |
-| **LLM Engine** | Groq API (`llama-3.1-8b-instant`) | Fast inference, generous free tier, reliable `json_object` formatting | Initially built with Google Gemini 1.5 Flash, but persistent 429/geo-blocking issues on the free tier made testing unstable. Swapped to Groq because of its blazing-fast token generation, generous free tier, and reliable native json_object formatting. |
-| **PDF Parser** | PyMuPDF (`fitz`) | Faster and more reliable section extraction than `pdfplumber` or `PyPDF2` | Chosen over pdfplumber or PyPDF2 for its speed and superior handling of raw text blocks, making Regex extraction of specific "Section X" headers much more reliable.|
-| **Database** | SQLite3 | Zero-configuration setup and lightweight persistence | Zero-configuration setup. Fits the "run from scratch in 5 minutes" requirement perfectly while supporting robust SQL joins to retrieve historical weak areas for the RAG prompt.| 
-| **API Layer** | FastAPI + Uvicorn | High performance and automatic Swagger documentation | | 
-| **Frontend** | Streamlit | Rapid development of an interactive UI without requiring React/Node | |
+| **Language** | Python 3.10+ | Modern ecosystem and excellent AI tooling |
+| **LLM Engine** | Groq API (`llama-3.1-8b-instant`) | Fast inference, generous free tier, reliable `json_object` formatting. Initially built with Google Gemini 1.5 Flash, but persistent 429/geo-blocking issues on the free tier made testing unstable. Swapped to Groq because of its blazing-fast token generation, generous free tier, and reliable native json_object formatting. |
+| **PDF Parser** | PyMuPDF (`fitz`) | Faster and more reliable section extraction than `pdfplumber` or `PyPDF2`. Chosen over pdfplumber or PyPDF2 for its speed and superior handling of raw text blocks, making Regex extraction of specific "Section X" headers much more reliable.|
+| **Database** | SQLite3 | Zero-configuration setup and lightweight persistence . Zero-configuration setup. Fits the "run from scratch in 5 minutes" requirement perfectly while supporting robust SQL joins to retrieve historical weak areas for the RAG prompt.| 
+| **API Layer** | FastAPI + Uvicorn | High performance and automatic Swagger documentation | 
+| **Frontend** | Streamlit | Rapid development of an interactive UI without requiring React/Node |
 
 ---
 
