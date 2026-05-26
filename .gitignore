@@ -1,0 +1,28 @@
+# Environment
+.env
+venv/
+env/
+
+# Python
+__pycache__/
+*.pyc
+.pytest_cache/
+
+# IDE
+.vscode/
+
+# OS
+.DS_Store
+
+# Databases
+*.sqlite
+*.db
+
+# Logs
+system.log
+
+# Generated outputs
+outputs/
+
+# Streamlit
+.streamlit/
