@@ -193,7 +193,7 @@ http://localhost:8501
 Validate database initialization and error-handling logic.
 
 ```bash
-pytest tests/
+python -m pytest tests/ -v -s
 ```
 
 ---
